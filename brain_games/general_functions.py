@@ -1,17 +1,22 @@
-import random
+from random import randint
 import prompt
 
 ROUNDS = 3
 
 
-def welcome_user():  # ask user's name and greet him or her
-    user_name = prompt.string('May I have your name?\n')
-    print('Hello, %s!' % user_name)
+def get_user_name():
+    return prompt.string('May I have your name? ')
+
+
+def welcome_user():
+    user_name = get_user_name()
+    greeting = f'Hello, {user_name}!'
+    print(greeting)
     return user_name
 
 
 def generate_number():
-    return randint(1, 999)
+    return randint(1, 100)
 
 
 def answer_check(user_answer, correct_answer):  # checking user's answers
@@ -33,12 +38,16 @@ def start_game(game=None):  # run game
         game_process(user_name, game.ask_question)
 
 
+def get_user_answer():
+    return prompt.string('Your answer: ')
+
+
 def game_process(user_name, play):
     correct_answers = 0
     while correct_answers < ROUNDS:
         question, correct_answer = play()
         print(question)
-        res, msg = check_answer(get_user_answer(), correct_answer)
+        res, msg = answer_check(get_user_answer(), correct_answer)
         print(msg)
         if not res:
             print(f"Let's try again, {user_name}!")
