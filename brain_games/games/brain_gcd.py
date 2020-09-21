@@ -12,6 +12,9 @@ def ask_question():
 
 
 def gcd(first_number, second_number):
-    if not first_number:
-        return second_number
-    return gcd(second_number, first_number % second_number)
+    while first_number != 0 and second_number !=0:
+        if first_number > second_number:
+            first_number %= second_number
+        else:
+            second_number %= first_number
+    return first_number + second_number
