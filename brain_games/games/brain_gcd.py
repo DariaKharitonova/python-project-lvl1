@@ -11,7 +11,7 @@ def ask_question():
     return question, str(answer)
 
 
-def gcd(first_number, second_number):
+def gcd(first_number, second_number):  # Euclidean algorithm
     while first_number != 0 and second_number !=0:
         if first_number > second_number:
             first_number %= second_number
