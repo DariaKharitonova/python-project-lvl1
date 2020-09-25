@@ -22,9 +22,9 @@ def generate_number():
 def answer_check(user_answer, correct_answer):  # checking user's answers
     if user_answer == correct_answer:
         message = 'Correct!'
-        return 1, message
+        return True, message
     message = "'{wrong}' is wrong answer ;(. Correct answer was '{correct}'."
-    return 0, message.format(wrong=user_answer, correct=correct_answer)
+    return False, message.format(wrong=user_answer, correct=correct_answer)
 
 
 def start_game(game=None):  # run game

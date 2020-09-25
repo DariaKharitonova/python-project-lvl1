@@ -4,6 +4,10 @@ RULES = 'What number is missing in the progression?'
 PROGRESSION_LENGHT = 10
 
 
+def generate_number():
+    return randint(1, 100)
+
+
 def create_progression():
     first_number = randint(1, 100)
     step = randint(1, 10)

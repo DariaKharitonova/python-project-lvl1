@@ -1,15 +1,18 @@
-<h1 style="text-align: center;">Brain Games</h1>
+# Brain Games
 
-<hr />
-<h2 style="text-align: center;"><span>The training project on the Python Software Development course on&nbsp;</span><a href="https://ru.hexlet.io/" rel="nofollow">Hexlet.io</a></h2>
-<hr />
-<h4 class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="Перевод" id="tw-target-text" dir="ltr" style="text-align: center;"><span lang="en">This is a collection of console games. You can install the package simply by running the command in your terminal:</span></h4>
-<pre><span lang="en"><span>pip install -i https://test.pypi.org/simple/ dariakharitonova-brain-games</span></span></pre>
+---
+
+The training project on the Python Software Development course on [Hexlet.io](https://ru.hexlet.io/professions/python)
+---
+This is a collection of console games. You can install the package simply by running the command in your terminal:
+<pre><span lang="en"><span>pip install -i https://test.pypi.org/simple/ dariakharitonova-brain-games --extra-index-url https://pypi.org/simple</span></span></pre>
 <p><span lang="en"></span></p>
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 [![Github Actions Status](https://github.com/DariaKharitonova/python-project-lvl1/workflows/Python%20CI/badge.svg)](https://github.com/DariaKharitonova/python-project-lvl1/actions)
+
+
 
 <h4><span>Number is even or odd?</span></h4>
 <a href="https://asciinema.org/a/QhvIpa6qKi4ncpLrccT7VD94B" target="_blank"><img src="https://asciinema.org/a/QhvIpa6qKi4ncpLrccT7VD94B.svg" /></a>

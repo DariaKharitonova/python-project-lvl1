@@ -1,9 +1,13 @@
-from brain_games.general_functions import generate_number
+from random import randint
 
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def ask_question():
+def generate_number():
+    return randint(1, 50)
+
+
+def generate_question():
     first_number = generate_number()
     second_number = generate_number()
     question = f'Question: {first_number} {second_number}'
