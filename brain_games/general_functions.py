@@ -27,7 +27,7 @@ def answer_check(user_answer, correct_answer):  # checking user's answers
     return False, message.format(wrong=user_answer, correct=correct_answer)
 
 
-def start_game(game=None):  # run game
+def start_game(game):  # run game
     print('Welcome to the Brain games!')
     if game:
         print(game.RULES)
@@ -35,7 +35,7 @@ def start_game(game=None):  # run game
     user_name = welcome_user()
     if game:
         print()
-        game_process(user_name, game.ask_question)
+        game_process(user_name, game.generate_question)
 
 
 def get_user_answer():

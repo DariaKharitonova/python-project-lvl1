@@ -14,13 +14,13 @@ This is a collection of console games. You can install the package simply by run
 
 
 
-<h4><span>Number is even or odd?</span></h4>
-<a href="https://asciinema.org/a/QhvIpa6qKi4ncpLrccT7VD94B" target="_blank"><img src="https://asciinema.org/a/QhvIpa6qKi4ncpLrccT7VD94B.svg" /></a>
-<h4><span>Find a result of the expression</span></h4>
-<a href="https://asciinema.org/a/360758" target="_blank"><img src="https://asciinema.org/a/360758.svg" /></a>
-<h4><span>Find GCD of the given numbers</span></h4>
-<a href="https://asciinema.org/a/JAVyXcR6czWbSIAzNoOXEtBmV" target="_blank"><img src="https://asciinema.org/a/JAVyXcR6czWbSIAzNoOXEtBmV.svg" /></a>
-<h4>Fill empty space in arithmetic progression</h4>
-<a href="https://asciinema.org/a/3VQjsdwaqQRmJi3kqITU9uF0h" target="_blank"><img src="https://asciinema.org/a/3VQjsdwaqQRmJi3kqITU9uF0h.svg" /></a>
-<h4><span>Number is prime or not?</span></h4>
-<a href="https://asciinema.org/a/CHNRaSkJuHJKLd0TcciCXQlPx" target="_blank"><img src="https://asciinema.org/a/CHNRaSkJuHJKLd0TcciCXQlPx.svg" /></a>
+####Number is even or odd?
+[![asciicast](https://asciinema.org/a/QhvIpa6qKi4ncpLrccT7VD94B.svg)](https://asciinema.org/a/QhvIpa6qKi4ncpLrccT7VD94B)
+####Find a result of the expression
+[![asciicast](https://asciinema.org/a/360758.svg)](https://asciinema.org/a/360758)
+####Find GCD of the given numbers
+[![asciicast](https://asciinema.org/a/JAVyXcR6czWbSIAzNoOXEtBmV.svg)](https://asciinema.org/a/JAVyXcR6czWbSIAzNoOXEtBmV)
+####Fill empty space in arithmetic progression
+[![asciicast](https://asciinema.org/a/3VQjsdwaqQRmJi3kqITU9uF0h.svg)](https://asciinema.org/a/3VQjsdwaqQRmJi3kqITU9uF0h)
+####Number is prime or not?
+[![asciicast](https://asciinema.org/a/CHNRaSkJuHJKLd0TcciCXQlPx.svg)](https://asciinema.org/a/CHNRaSkJuHJKLd0TcciCXQlPx)
