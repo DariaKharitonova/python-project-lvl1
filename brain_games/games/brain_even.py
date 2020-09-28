@@ -7,14 +7,14 @@ def generate_number():
     return randint(1, 100)
 
 
+def is_even(number):  # test of even
+    if number % 2 != 0:
+        return False
+    return True
+
+
 def generate_question():
     number = generate_number()
     question = f'Question: {number}'
-    answer = correct_answer(number)
-    return question, answer
-
-
-def correct_answer(number):  # rules of even
-    if number % 2 == 0:
-        return 'yes'
-    return 'no'
+    correct_answer = 'yes' if is_even(number) else 'no'
+    return question, correct_answer

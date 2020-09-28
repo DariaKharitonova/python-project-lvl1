@@ -15,12 +15,21 @@ This is a collection of console games. You can install the package simply by run
 
 
 ####Number is even or odd?
+
 [![asciicast](https://asciinema.org/a/QhvIpa6qKi4ncpLrccT7VD94B.svg)](https://asciinema.org/a/QhvIpa6qKi4ncpLrccT7VD94B)
+
 ####Find a result of the expression
+
 [![asciicast](https://asciinema.org/a/360758.svg)](https://asciinema.org/a/360758)
+
 ####Find GCD of the given numbers
+
 [![asciicast](https://asciinema.org/a/JAVyXcR6czWbSIAzNoOXEtBmV.svg)](https://asciinema.org/a/JAVyXcR6czWbSIAzNoOXEtBmV)
+
 ####Fill empty space in arithmetic progression
+
 [![asciicast](https://asciinema.org/a/3VQjsdwaqQRmJi3kqITU9uF0h.svg)](https://asciinema.org/a/3VQjsdwaqQRmJi3kqITU9uF0h)
+
 ####Number is prime or not?
+
 [![asciicast](https://asciinema.org/a/CHNRaSkJuHJKLd0TcciCXQlPx.svg)](https://asciinema.org/a/CHNRaSkJuHJKLd0TcciCXQlPx)
