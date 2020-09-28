@@ -28,14 +28,14 @@ def answer_check(user_answer, correct_answer):  # checking user's answers
 
 
 def start_game(game):  # run game
-    print('Welcome to the Brain games!')
-    if game:
-        print(game.RULES)
+    if not game:
+        return
+    print('Welcome to the Brain Games!')
+    print(game.RULES)
     print()
     user_name = welcome_user()
-    if game:
-        print()
-        game_process(user_name, game.generate_question)
+    print()
+    game_process(user_name, game.generate_question)
 
 
 def get_user_answer():

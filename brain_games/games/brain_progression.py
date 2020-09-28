@@ -15,9 +15,9 @@ def create_progression():
     return range(first_number, max_number, step)
 
 
-def ask_question():
+def generate_question():
     progression = create_progression()
-    hidden_element_index = randint(0, PROGRESSION_LENGHT - 1)
+    hidden_element_index = randint(0, len(progression) - 1)
     hidden_element = progression[hidden_element_index]
     result_progression = ' '.join([
         '..' if num == hidden_element else str(num) for num in progression

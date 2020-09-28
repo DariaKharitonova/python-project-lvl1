@@ -8,14 +8,9 @@ def generate_number():
 
 
 def is_prime(number):
-    counter = 3
-    while counter <= number // 2:
-        if not number % counter:
-            return False
-        counter += 1
     if number < 2:
         return False
-    return True
+    return all(number % i for i in range(2, number))
 
 
 def generate_question():
