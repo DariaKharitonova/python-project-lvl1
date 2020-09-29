@@ -2,6 +2,7 @@ from random import randint
 import prompt
 
 ROUNDS = 3
+PREFIX_STRING = 'Question: '
 
 
 def get_user_name():
@@ -15,8 +16,10 @@ def welcome_user():
     return user_name
 
 
-def generate_number():
-    return randint(1, 100)
+def question_prefix():
+    if PREFIX_STRING:
+        return PREFIX_STRING + ''
+    return ''
 
 
 def answer_check(user_answer, correct_answer):  # checking user's answers

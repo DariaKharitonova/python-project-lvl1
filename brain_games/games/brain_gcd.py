@@ -1,4 +1,5 @@
 from random import randint
+from brain_games.general_functions import question_prefix
 
 RULES = 'Find the greatest common divisor of given numbers.'
 
@@ -10,7 +11,7 @@ def generate_number():
 def generate_question():
     first_number = generate_number()
     second_number = generate_number()
-    question = f'Question: {first_number} {second_number}'
+    question = f'{question_prefix()} {first_number} {second_number}'
     answer = gcd(first_number, second_number)
     return question, str(answer)
 
