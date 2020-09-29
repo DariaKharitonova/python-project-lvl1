@@ -23,6 +23,6 @@ def generate_question():
     first_number = generate_number()
     second_number = generate_number()
     operation = generate_operation()
-    question = f'{question_prefix()} {first_number} {operation} {second_number}'
+    task = f'{question_prefix()} {first_number} {operation} {second_number}'
     answer = correct_answer(first_number, operation, second_number)
-    return question, answer
+    return task, answer
