@@ -18,20 +18,19 @@ pip install -i pip install -i https://test.pypi.org/simple/ dariakharitonova-bra
 
 #### Number is even or odd?
 
-[![asciicast](https://asciinema.org/a/QhvIpa6qKi4ncpLrccT7VD94B.svg)](https://asciinema.org/a/QhvIpa6qKi4ncpLrccT7VD94B)
+[![asciicast](https://asciinema.org/a/vSUYsuplwlLMMyaqhUDhPRQb3.svg)](https://asciinema.org/a/vSUYsuplwlLMMyaqhUDhPRQb3)
 
 #### Find a result of the expression
 
-[![asciicast](https://asciinema.org/a/360758.svg)](https://asciinema.org/a/360758)
+[![asciicast](https://asciinema.org/a/CAXVuSOenxATWV0VI9OJZmL4l.svg)](https://asciinema.org/a/CAXVuSOenxATWV0VI9OJZmL4l)
 
 #### Find GCD of the given numbers
 
-[![asciicast](https://asciinema.org/a/JAVyXcR6czWbSIAzNoOXEtBmV.svg)](https://asciinema.org/a/JAVyXcR6czWbSIAzNoOXEtBmV)
+[![asciicast](https://asciinema.org/a/JQ5FjBYvjEC8VwCY00JCegnnp.svg)](https://asciinema.org/a/JQ5FjBYvjEC8VwCY00JCegnnp)
 
 #### Fill empty space in arithmetic progression
 
-[![asciicast](https://asciinema.org/a/3VQjsdwaqQRmJi3kqITU9uF0h.svg)](https://asciinema.org/a/3VQjsdwaqQRmJi3kqITU9uF0h)
-
+[![asciicast](https://asciinema.org/a/C53EfENQ7PPKmcN8P5hJJL0yM.svg)](https://asciinema.org/a/C53EfENQ7PPKmcN8P5hJJL0yM)
 #### Number is prime or not?
 
-[![asciicast](https://asciinema.org/a/CHNRaSkJuHJKLd0TcciCXQlPx.svg)](https://asciinema.org/a/CHNRaSkJuHJKLd0TcciCXQlPx)
+[![asciicast](https://asciinema.org/a/sxlo3Gg3TIYAfJY7catMwZ5zR.svg)](https://asciinema.org/a/sxlo3Gg3TIYAfJY7catMwZ5zR)
