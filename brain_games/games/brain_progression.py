@@ -3,10 +3,11 @@ from brain_games.general_functions import question_prefix
 
 RULES = 'What number is missing in the progression?'
 PROGRESSION_LENGHT = 10
+LAST_NUMBER = 100  # maximum random number
 
 
 def generate_number():
-    return randint(1, 100)
+    return randint(1, LAST_NUMBER)
 
 
 def create_progression():

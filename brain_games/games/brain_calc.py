@@ -5,10 +5,11 @@ from brain_games.general_functions import question_prefix
 operations = {'+': operator.add, '-': operator.sub, '*': operator.mul}
 
 DESCRIPTION = 'What is the result of the expression?'
+LAST_NUMBER = 10  # maximum random number
 
 
 def generate_number():
-    return randint(1, 10)
+    return randint(1, LAST_NUMBER)
 
 
 def generate_operation():

@@ -2,6 +2,7 @@ from random import randint
 from brain_games.general_functions import question_prefix
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+LAST_NUMBER = 50  # maximum random number
 
 
 def generate_number():

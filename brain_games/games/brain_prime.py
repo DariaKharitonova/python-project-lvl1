@@ -2,10 +2,11 @@ from random import randint
 from brain_games.general_functions import question_prefix
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+LAST_NUMBER = 100  # maximum random number
 
 
 def generate_number():
-    return randint(1, 100)
+    return randint(1, LAST_NUMBER)
 
 
 def is_prime(number):
