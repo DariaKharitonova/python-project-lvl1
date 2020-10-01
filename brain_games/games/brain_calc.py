@@ -4,7 +4,7 @@ from brain_games.general_functions import question_prefix
 
 operations = {'+': operator.add, '-': operator.sub, '*': operator.mul}
 
-RULES = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
 
 
 def generate_number():

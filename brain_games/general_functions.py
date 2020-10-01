@@ -1,6 +1,6 @@
 import prompt
 
-ROUNDS = 3
+NUMBER_OF_ROUNDS = 3
 PREFIX_STRING = 'Question: '
 
 
@@ -33,7 +33,7 @@ def start_game(game):  # run game
     if not game:
         return
     print('Welcome to the Brain Games!')
-    print(game.RULES)
+    print(game.DESCRIPTION)
     print()
     user_name = welcome_user()
     print()
@@ -46,7 +46,7 @@ def get_user_answer():
 
 def game_process(user_name, play):
     correct_answers = 0
-    while correct_answers < ROUNDS:
+    while correct_answers < NUMBER_OF_ROUNDS:
         question, correct_answer = play()
         print(question)
         res, msg = answer_check(get_user_answer(), correct_answer)

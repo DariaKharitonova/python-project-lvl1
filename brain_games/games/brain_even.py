@@ -1,7 +1,7 @@
 from random import randint
 from brain_games.general_functions import question_prefix
 
-RULES = 'Answer "yes" if number even otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def generate_number():
@@ -9,9 +9,7 @@ def generate_number():
 
 
 def is_even(number):  # test of even
-    if number % 2 != 0:
-        return False
-    return True
+    return number % 2 == 0 and True or False
 
 
 def generate_question():

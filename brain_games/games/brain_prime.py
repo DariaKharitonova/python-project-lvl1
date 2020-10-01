@@ -1,7 +1,7 @@
 from random import randint
 from brain_games.general_functions import question_prefix
 
-RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def generate_number():
@@ -9,8 +9,6 @@ def generate_number():
 
 
 def is_prime(number):
-    if number < 2:
-        return False
     return all(number % i for i in range(2, number))
 
 

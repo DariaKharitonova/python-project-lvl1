@@ -1,7 +1,7 @@
 from random import randint
 from brain_games.general_functions import question_prefix
 
-RULES = 'Find the greatest common divisor of given numbers.'
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def generate_number():
