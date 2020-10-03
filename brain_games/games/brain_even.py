@@ -2,7 +2,8 @@ from random import randint
 from brain_games.general_functions import question_prefix
 
 DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
-LAST_NUMBER = 100  # maximum random number
+MAX_NUMBER = 100
+MIN_NUMBER = 1
 
 
 def generate_number():
