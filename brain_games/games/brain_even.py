@@ -7,7 +7,7 @@ MIN_NUMBER = 1
 
 
 def generate_number():
-    return randint(1, LAST_NUMBER)
+    return randint(MIN_NUMBER, MAX_NUMBER_NUMBER)
 
 
 def is_even(number):  # test of even

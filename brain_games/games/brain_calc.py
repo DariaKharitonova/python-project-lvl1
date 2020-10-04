@@ -5,7 +5,7 @@ from brain_games.general_functions import question_prefix
 operations = {'+': operator.add, '-': operator.sub, '*': operator.mul}
 
 DESCRIPTION = 'What is the result of the expression?'
-MAX_NUMBER = 100
+MAX_NUMBER = 10
 MIN_NUMBER = 1
 
 

@@ -1,7 +1,7 @@
 from random import randint
 from brain_games.general_functions import question_prefix
 
-RULES = 'What number is missing in the progression?'
+DESCRIPTION = 'What number is missing in the progression?'
 PROGRESSION_LENGHT = 10
 MAX_NUMBER = 100
 MIN_NUMBER = 1

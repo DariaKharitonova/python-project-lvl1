@@ -7,7 +7,7 @@ MIN_NUMBER = 1
 
 
 def generate_number():
-    return randint(MIN_NUMBER, MAX_NUMBER
+    return randint(MIN_NUMBER, MAX_NUMBER)
 
 
 def is_prime(number):
