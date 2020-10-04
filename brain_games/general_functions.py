@@ -45,7 +45,7 @@ def get_user_answer():
 
 
 def game_process(user_name, play):
-    for correct_answers in range(NUMBER_OF_ROUNDS):
+    for number_of_correct_answers in range(NUMBER_OF_ROUNDS):
         question, correct_answer = play()
         print(question)
         res, msg = answer_check(get_user_answer(), correct_answer)
@@ -53,5 +53,5 @@ def game_process(user_name, play):
         if not res:
             print(f"Let's try again, {user_name}!")
             return
-        correct_answers +=1
+        number_of_correct_answers +=1
     print(f'Congratulations, {user_name}!')
