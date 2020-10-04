@@ -29,7 +29,7 @@ def answer_check(user_answer, correct_answer):  # checking user's answers
     return False, message.format(wrong=user_answer, correct=correct_answer)
 
 
-def start_game(game):  # run game
+def run_game(game):
     if not game:
         return
     print('Welcome to the Brain Games!')
