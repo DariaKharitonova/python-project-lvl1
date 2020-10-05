@@ -15,7 +15,7 @@ def welcome_user():
     return user_name
 
 
-def answer_check(user_answer, correct_answer):  # checking user's answers
+def is_answer_correct(user_answer, correct_answer):  # checking user's answers
     if user_answer == correct_answer:
         message = 'Correct!'
         return True, message
@@ -39,13 +39,13 @@ def get_user_answer():
 
 
 def game_process(user_name, play):
-    for number_of_correct_answers in range(NUMBER_OF_ROUNDS):
+    for number in range(NUMBER_OF_ROUNDS):
         question, correct_answer = play()
         print(f'{PREFIX_STRING} {question}')
-        res, msg = answer_check(get_user_answer(), correct_answer)
+        res, msg = is_answer_correct(get_user_answer(), correct_answer)
         print(msg)
         if not res:
             print(f"Let's try again, {user_name}!")
             return
-        number_of_correct_answers += 1
+        number += 1
     print(f'Congratulations, {user_name}!')
