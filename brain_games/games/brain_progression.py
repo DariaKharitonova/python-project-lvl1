@@ -1,5 +1,4 @@
 from random import randint
-from brain_games.general_functions import question_prefix
 
 DESCRIPTION = 'What number is missing in the progression?'
 PROGRESSION_LENGHT = 10
@@ -25,5 +24,5 @@ def generate_question():
     result_progression = ' '.join([
         '..' if num == hidden_element else str(num) for num in progression
     ])
-    question = f'{question_prefix()} {result_progression}'
+    question = f'{result_progression}'
     return question, str(hidden_element)

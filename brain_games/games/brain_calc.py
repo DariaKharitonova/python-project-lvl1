@@ -1,6 +1,5 @@
 from random import choice, randint
 import operator
-from brain_games.general_functions import question_prefix
 
 operations = {'+': operator.add, '-': operator.sub, '*': operator.mul}
 
@@ -25,6 +24,6 @@ def generate_question():
     first_number = generate_number()
     second_number = generate_number()
     operation = generate_operation()
-    task = f'{question_prefix()} {first_number} {operation} {second_number}'
+    task = f' {first_number} {operation} {second_number}'
     answer = correct_answer(first_number, operation, second_number)
     return task, answer

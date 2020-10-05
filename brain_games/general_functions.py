@@ -1,7 +1,7 @@
 import prompt
 
 NUMBER_OF_ROUNDS = 3
-PREFIX_STRING = 'Question: '
+PREFIX_STRING = 'Question:'
 
 
 def get_user_name():
@@ -13,12 +13,6 @@ def welcome_user():
     greeting = f'Hello, {user_name}!'
     print(greeting)
     return user_name
-
-
-def question_prefix():
-    if PREFIX_STRING:
-        return PREFIX_STRING + ''
-    return ''
 
 
 def answer_check(user_answer, correct_answer):  # checking user's answers
@@ -47,11 +41,11 @@ def get_user_answer():
 def game_process(user_name, play):
     for number_of_correct_answers in range(NUMBER_OF_ROUNDS):
         question, correct_answer = play()
-        print(question)
+        print(f'{PREFIX_STRING} {question}')
         res, msg = answer_check(get_user_answer(), correct_answer)
         print(msg)
         if not res:
             print(f"Let's try again, {user_name}!")
             return
-        number_of_correct_answers +=1
+        number_of_correct_answers += 1
     print(f'Congratulations, {user_name}!')
