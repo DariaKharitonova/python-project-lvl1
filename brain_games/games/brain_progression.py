@@ -17,7 +17,7 @@ def create_progression():
     return range(first_number, max_number, step)
 
 
-def generate_question():
+def get_question_answer():
     progression = create_progression()
     hidden_element_index = randint(0, len(progression) - 1)
     hidden_element = progression[hidden_element_index]

@@ -13,7 +13,7 @@ def is_even(number):  # test of even
     return number % 2 == 0 and True or False
 
 
-def generate_question():
+def get_question_answer():
     number = generate_number()
     question = f'{number}'
     correct_answer = 'yes' if is_even(number) else 'no'

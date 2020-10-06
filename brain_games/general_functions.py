@@ -31,7 +31,7 @@ def run_game(game):
     print()
     user_name = welcome_user()
     print()
-    game_process(user_name, game.generate_question)
+    game_process(user_name, game.get_question_answer)
 
 
 def get_user_answer():

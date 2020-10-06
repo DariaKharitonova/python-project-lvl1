@@ -13,7 +13,7 @@ def is_prime(number):
     return all(number % i for i in range(2, number))
 
 
-def generate_question():
+def get_question_answer():
     number = generate_number()
     question = f'{number}'
     correct_answer = 'yes' if is_prime(number) else 'no'
