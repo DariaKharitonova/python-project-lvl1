@@ -31,14 +31,14 @@ def run_game(game):
     print()
     user_name = welcome_user()
     print()
-    game_process(user_name, game.get_question_answer)
+    play_game(user_name, game.get_question_answer)
 
 
 def get_user_answer():
     return prompt.string('Your answer: ')
 
 
-def game_process(user_name, play):
+def play_game(user_name, play):
     for number in range(NUMBER_OF_ROUNDS):
         question, correct_answer = play()
         print(f'{PREFIX_STRING} {question}')
