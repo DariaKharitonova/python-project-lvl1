@@ -18,7 +18,7 @@ def welcome_user():
 def is_answer_correct(user_answer, correct_answer):  # checking user's answers
     if user_answer == correct_answer:
         return True
-    return False, message.format(wrong=user_answer, correct=correct_answer)
+    return False
 
 
 def run_game(game):
