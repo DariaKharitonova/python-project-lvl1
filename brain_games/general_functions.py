@@ -17,15 +17,11 @@ def welcome_user():
 
 def is_answer_correct(user_answer, correct_answer):  # checking user's answers
     if user_answer == correct_answer:
-        message = 'Correct!'
-        return True, message
-    message = "'{wrong}' is wrong answer ;(. Correct answer was '{correct}'."
+        return True
     return False, message.format(wrong=user_answer, correct=correct_answer)
 
 
 def run_game(game):
-    if not game:
-        return
     print('Welcome to the Brain Games!')
     print(game.DESCRIPTION)
     print()
@@ -42,10 +38,12 @@ def play_game(user_name, play):
     for number in range(NUMBER_OF_ROUNDS):
         question, correct_answer = play()
         print(f'{PREFIX_STRING} {question}')
-        res, msg = is_answer_correct(get_user_answer(), correct_answer)
-        print(msg)
-        if not res:
+        user_answer = get_user_answer()
+        is_correct = is_answer_correct(user_answer, correct_answer)
+        if not is_correct:
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {user_name}!")
             return
+        print('Correct!')
         number += 1
     print(f'Congratulations, {user_name}!')
