@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "DariaKharitonova_brain_games"
-version = "0.2.0"
+version = "0.2.1"
 description = "Brain Games project on Hexlet"
 authors = ["Daria <kharitonovadari@gmail.com>"]
 repository = "https://github.com/DariaKharitonova/python-project-lvl1"
