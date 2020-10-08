@@ -4,15 +4,13 @@ DESCRIPTION = 'What number is missing in the progression?'
 PROGRESSION_LENGHT = 10
 MAX_NUMBER = 100
 MIN_NUMBER = 1
-
-
-def generate_number():
-    return randint(MIN_NUMBER, MAX_NUMBER)
+MIN_PROGRESSION_STEP = 1
+MAX_PROGRESSION_STEP = 10
 
 
 def create_progression():
-    first_number = randint(1, 100)
-    step = randint(1, 10)
+    first_number = randint(MIN_NUMBER, MAX_NUMBER)
+    step = randint(MAX_PROGRESSION_STEP, MAX_PROGRESSION_STEP)
     max_number = first_number + (PROGRESSION_LENGHT * step)
     return range(first_number, max_number, step)
 
