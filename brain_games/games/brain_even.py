@@ -10,11 +10,11 @@ def generate_number():
 
 
 def is_even(number):  # test of even
-    return number % 2 == 0 and True or False
+    return number % 2 == 0
 
 
 def get_question_answer():
     number = generate_number()
-    question = f'{number}'
+    question = str(number)
     correct_answer = 'yes' if is_even(number) else 'no'
     return question, correct_answer

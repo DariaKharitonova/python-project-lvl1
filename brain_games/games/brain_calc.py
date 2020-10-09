@@ -20,7 +20,7 @@ def get_correct_answer(first_number, operation, second_number):
     return str(operations[operation](first_number, second_number))
 
 
-def get_question_answer():
+def get_question_and_answer():
     first_number = generate_number()
     second_number = generate_number()
     operation = generate_operation()
