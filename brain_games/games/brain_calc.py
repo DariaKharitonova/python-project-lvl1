@@ -1,4 +1,4 @@
-from random import choice, randint
+import random
 import operator
 
 operations = {'+': operator.add, '-': operator.sub, '*': operator.mul}

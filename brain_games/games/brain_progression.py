@@ -1,4 +1,4 @@
-from random import randint
+import random
 
 DESCRIPTION = 'What number is missing in the progression?'
 PROGRESSION_LENGHT = 10

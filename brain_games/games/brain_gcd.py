@@ -1,4 +1,4 @@
-from random import randint
+import random
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 MAX_NUMBER = 50

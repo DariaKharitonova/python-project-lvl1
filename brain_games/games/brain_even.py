@@ -1,4 +1,4 @@
-from random import randint
+import random
 
 DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 MAX_NUMBER = 100

@@ -1,4 +1,4 @@
-from random import randint
+import random
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 MAX_NUMBER = 100
@@ -10,10 +10,12 @@ def generate_number():
 
 
 def is_prime(number):
-    return all(number % i for i in range(2, number))
+    if number < 0:
+        return False
+    return all(number % i for i in range(2, number - 1))
 
 
-def get_question_answer():
+def get_question_and_answer():
     number = generate_number()
     question = f'{number}'
     correct_answer = 'yes' if is_prime(number) else 'no'
