@@ -9,7 +9,7 @@ def generate_number():
     return randint(MIN_NUMBER, MAX_NUMBER)
 
 
-def get_question_answer():
+def get_question_and_answer():
     first_number = generate_number()
     second_number = generate_number()
     question = f'{first_number} {second_number}'

@@ -13,17 +13,17 @@ def generate_number():
 
 
 def generate_operation():
-    return choice(list(operations.keys()))
+    return choice(list(operations.items()))
 
 
 def get_correct_answer(first_number, operation, second_number):
-    return str(operations[operation](first_number, second_number))
+    return str(operation[1](first_number, second_number))
 
 
 def get_question_and_answer():
     first_number = generate_number()
     second_number = generate_number()
     operation = generate_operation()
-    task = f'{first_number} {operation} {second_number}'
+    task = f'{first_number} {operation[0]} {second_number}'
     answer = get_correct_answer(first_number, operation, second_number)
     return task, answer
