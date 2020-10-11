@@ -20,7 +20,8 @@ def get_question_and_answer():
     hidden_element_index = random.randint(0, len(progression) - 1)
     hidden_element = progression[hidden_element_index]
     result_progression = ' '.join([
-        '..' if num == hidden_element else str(num) for (_, num) in enumerate(progression)
+        ".." if num == hidden_element else str(num) for (_, num)\
+        in enumerate(progression)
     ])
     question = f'{result_progression}'
     return question, str(hidden_element)

@@ -34,8 +34,8 @@ def run_game_loop(user_name, get_qa):
         print(f'{PREFIX} {question}')
         user_answer = get_user_answer()
         if user_answer != correct_answer:
-            print(f"'{user_answer}' is wrong answer \'"
-                  f";(. Correct answer was '{correct_answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(. \'"
+                  f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {user_name}!")
             return
         print('Correct!')
