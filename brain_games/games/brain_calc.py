@@ -9,11 +9,11 @@ MIN_NUMBER = 1
 
 
 def generate_number():
-    return randint(MIN_NUMBER, MAX_NUMBER)
+    return random.randint(MIN_NUMBER, MAX_NUMBER)
 
 
 def generate_operation():
-    return choice(list(operations.items()))
+    return random.choice(list(operations.items()))
 
 
 def get_correct_answer(first_number, operation, second_number):

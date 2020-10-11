@@ -10,9 +10,13 @@ def generate_number():
 
 
 def is_prime(number):
-    if number < 0:
+    if number > 1:
+        for i in range(2, number - 1):
+            if (number % i) == 0:
+                return False
+    else:
         return False
-    return all(number % i for i in range(2, number - 1))
+    return True
 
 
 def get_question_and_answer():
