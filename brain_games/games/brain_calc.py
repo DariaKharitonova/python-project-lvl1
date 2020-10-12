@@ -25,5 +25,5 @@ def get_question_and_answer():
     second_number = generate_number()
     operation_symbol = generate_operation()
     task = f'{first_number} {operation_symbol[0]} {second_number}'
-    answer = get_correct_answer(first_number, operation, second_number)
+    answer = get_correct_answer(first_number, operation_symbol, second_number)
     return task, answer
