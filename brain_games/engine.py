@@ -1,7 +1,7 @@
 import prompt
 
 NUMBER_OF_ROUNDS = 3
-PREFIX = 'Question:'
+PREFIX_TASK = 'Question:'
 
 
 def get_user_name():
@@ -31,7 +31,7 @@ def get_user_answer():
 def run_game_loop(user_name, get_qa):
     for _ in range(NUMBER_OF_ROUNDS):
         question, correct_answer = get_qa()
-        print(f'{PREFIX} {question}')
+        print(f'{PREFIX_TASK} {question}')
         user_answer = get_user_answer()
         if user_answer != correct_answer:
             print(f"'{user_answer}' is wrong answer ;(. \'"
