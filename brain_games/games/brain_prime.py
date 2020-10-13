@@ -5,10 +5,6 @@ MAX_NUMBER = 100
 MIN_NUMBER = 1
 
 
-def generate_number():
-    return random.randint(MIN_NUMBER, MAX_NUMBER)
-
-
 def is_prime(number):
     if number <= 1:
         return False
@@ -23,3 +19,7 @@ def get_question_and_answer():
     question = str(number)
     correct_answer = 'yes' if is_prime(number) else 'no'
     return question, correct_answer
+
+
+def generate_number():
+    return random.randint(MIN_NUMBER, MAX_NUMBER)

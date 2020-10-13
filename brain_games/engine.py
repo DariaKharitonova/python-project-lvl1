@@ -4,35 +4,21 @@ NUMBER_OF_ROUNDS = 3
 TASK_PREFIX = 'Question:'
 
 
-def get_user_name():
-    return prompt.string('May I have your name? ')
-
-
-def welcome_user():
-    user_name = get_user_name()
-    greeting = f'Hello, {user_name}!'
-    print(greeting)
-    return user_name
-
-
 def run_game(game):
     print('Welcome to the Brain Games!')
     print(game.DESCRIPTION)
     print()
-    user_name = welcome_user()
+    user_name = prompt.string('May I have your name? ')
     print()
+    print(f'Hello, {user_name}!')
     run_game_loop(user_name, game.get_question_and_answer)
 
 
-def get_user_answer():
-    return prompt.string('Your answer: ')
-
-
-def run_game_loop(user_name, get_qa):
+def run_game_loop(user_name, get_question_and_answer):
     for _ in range(NUMBER_OF_ROUNDS):
-        question, correct_answer = get_qa()
+        question, correct_answer = get_question_and_answer()
         print(f'{TASK_PREFIX} {question}')
-        user_answer = get_user_answer()
+        user_answer = prompt.string('Your answer: ')
         if user_answer != correct_answer:
             print(f"'{user_answer}' is wrong answer ;(. \'"
                   f"Correct answer was '{correct_answer}'.")

@@ -5,10 +5,6 @@ MAX_NUMBER = 50
 MIN_NUMBER = 1
 
 
-def generate_number():
-    return random.randint(MIN_NUMBER, MAX_NUMBER)
-
-
 def get_question_and_answer():
     first_number = generate_number()
     second_number = generate_number()
@@ -25,3 +21,7 @@ def gcd(first_number, second_number):
         else:
             second_number %= first_number
     return first_number + second_number
+
+
+def generate_number():
+    return random.randint(MIN_NUMBER, MAX_NUMBER)
