@@ -9,7 +9,7 @@ def generate_number():
     return random.randint(MIN_NUMBER, MAX_NUMBER)
 
 
-def is_even(number):  # test of even
+def is_even(number):
     return number % 2 == 0
 
 

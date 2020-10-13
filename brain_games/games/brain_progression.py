@@ -8,10 +8,14 @@ MIN_PROGRESSION_STEP = 1
 MAX_PROGRESSION_STEP = 10
 
 
-def create_progression():
-    first_number = random.randint(MIN_NUMBER, MAX_NUMBER)
+def get_elements_progression():
+    first_number = random.randint(MIN_NUMBER, MIN_NUMBER)
     step = random.randint(MIN_PROGRESSION_STEP, MAX_PROGRESSION_STEP)
     max_number = first_number + (PROGRESSION_LENGHT * step)
+    return first_number, step, max_number
+
+
+def create_progression(first_number, step):
     return range(first_number, max_number, step)
 
 
