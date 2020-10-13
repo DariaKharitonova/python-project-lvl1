@@ -15,12 +15,12 @@ def get_elements_progression():
     return first_number, step, max_number
 
 
-def create_progression(first_number, step):
+def create_progression(first_number, max_number, step):
     return range(first_number, max_number, step)
 
 
 def get_question_and_answer():
-    progression = create_progression()
+    progression = create_progression(first_number, max_number, step)
     hidden_element_index = random.randint(0, len(progression) - 1)
     hidden_element = progression[hidden_element_index]
     result_progression = ' '.join([
