@@ -23,7 +23,8 @@ def get_correct_answer(first_number, operation_symbol, second_number):
 
 def generate_operation():
     operation_symbol = random.choice(list(operations.items()))
-    return operation_symbol[0], operation_symbol[1]
+    symbol, operation = operation_symbol
+    return symbol, operation
 
 
 def generate_number():
