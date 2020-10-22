@@ -18,8 +18,7 @@ def get_question_and_answer():
 
 
 def generate_operation():
-    operation_symbol = random.choice(list(operations.items()))
-    symbol, operation = operation_symbol
+    symbol, operation = random.choice(list(operations.items()))
     return symbol, operation
 
 
