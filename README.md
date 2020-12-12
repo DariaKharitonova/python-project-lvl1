@@ -7,7 +7,7 @@ The training project on the Python Software Development course on [Hexlet.io](ht
 This is a collection of console games. You can install the package simply by running the command in your terminal:
 
 ```bash
-pip install -i pip install -i https://test.pypi.org/simple/ dariakharitonova-brain-games --extra-index-url https://pypi.org/simple
+pip install -i https://test.pypi.org/simple/ dariakharitonova-brain-games --extra-index-url https://pypi.org/simple
 ```
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
